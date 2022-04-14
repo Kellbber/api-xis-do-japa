@@ -10,15 +10,17 @@ const findByIdXisController = (req, res) =>{
     const escolhaXis = xisService.findByIdXisService(idParametro);
     res.send(escolhaXis);
 }
-const createXisController = (req, res) =>{
+const createXisController = async (req, res) =>{
+    
     const oXis = req.body;
-    const newXis = xisService.createXisService(oXis);
+    const newXis = await xisService.createXisService(oXis);
     res.send(newXis);
 }
 
 const updateXisController = (req, res) =>{
     const idParametro = Number(req.params.id);
     const xisEdit = req.body;
+    console.log(xisEdit, req.body)
     const updateXis = xisService.updateXisService(idParametro, xisEdit);
     res.send(updateXis);
 }

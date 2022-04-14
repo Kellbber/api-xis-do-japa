@@ -1,3 +1,5 @@
+'use strict';
+
 const xis = [
     {
       id: 1,
@@ -40,8 +42,9 @@ const findByIdXisService = (idParametro) => {
 
 };
 
-const createXisService = (novoXis) =>{
+const createXisService =  (novoXis) =>{
     const newId = xis.length +1;
+    console.log(newId, novoXis)
     novoXis.id = newId;
     xis.push(novoXis);
     return novoXis;
@@ -59,7 +62,7 @@ const deleteXisService = (id) => {
     return xis.splice(xisIndex, 1);
 }
   module.exports = {
-      findAllXisService,
+        findAllXisService,
         findByIdXisService,
         createXisService,
         updateXisService,
