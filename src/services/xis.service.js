@@ -44,7 +44,7 @@ const findByIdXisService = (idParametro) => {
 
 const createXisService =  (novoXis) =>{
     const newId = xis.length +1;
-    console.log(newId, novoXis)
+    
     novoXis.id = newId;
     xis.push(novoXis);
     return novoXis;
