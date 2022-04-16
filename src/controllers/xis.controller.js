@@ -30,13 +30,13 @@ const findByIdXisController = (req, res) => {
   res.send(escolhaXis);
 };
 const createXisController = async (req, res) => {
-  const oXis = req.body;
-  if (!oXis || !oXis.sabor || !oXis.preco || !oXis.descricao || !oXis.foto) {
+  const xis = req.body;
+  if (!xis || !xis.sabor || !xis.preco || !xis.descricao || !xis.foto) {
     return res
       .status(400)
       .send({ message: 'Envie todos os campos preenchidos!' });
   }
-  const newXis = await xisService.createXisService(oXis);
+  const newXis = await xisService.createXisService(xis);
   res.status(201).send(newXis);
 };
 

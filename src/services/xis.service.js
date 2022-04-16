@@ -12,7 +12,7 @@ const xis = [
       id: 2,
       sabor: 'Xis Calabresa',
       descricao:
-        'Quam vulputate dignissim suspendisse in est ante in nibh mauris.',
+        'Pão, 2 Bifes de Hamb., 2 Queijos, Calabresa, Cebola Picada, Alface, Tomate, Milho verde e Batata Palha.',
       foto: '/images/xcalabresa.png',
       preco: 10.0,
     },
@@ -20,15 +20,15 @@ const xis = [
       id: 3,
       sabor: 'Xis Salada',
       descricao:
-        'Quam vulputate dignissim suspendisse in est ante in nibh mauris.',
+        'Pão, Bife de Hamb., Queijo, Alface, Tomate, Milho Verde e Batata Palha.',
       foto: '/images/xsalada.png',
       preco: 7.0,
     }, {
       id: 4,
-      sabor: 'Xis Carne',
+      sabor: 'Xis Filé',
       descricao:
-        'Quam vulputate dignissim suspendisse in est ante in nibh mauris.',
-      foto: '/images/xsalada.png',
+        'Pão, Filet Mignon, Frango Desfiado com Ovo, Queijo, Presunto, Bacon, Alface, Tomate, Milho Verde e Batata Palha.',
+      foto: '/images/xcarne.png',
       preco: 7.0,
     },
   ];
