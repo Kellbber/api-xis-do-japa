@@ -54,7 +54,7 @@ const updateXisService = (id, xisEdited) =>{
     xisEdited['id'] = id;
     const xisIndex = xis.findIndex((oXis) => oXis.id == id)
     xis[xisIndex] = xisEdited;
-    console.log(xis)
+    
     return xisEdited;
 }
 

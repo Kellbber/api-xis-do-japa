@@ -64,7 +64,7 @@ const deleteXisController = (req, res) => {
     .status(400)
     .send({ message: 'ID não existe!' });
 }
-  xisService.deleteXisService(idParametro);
+  console.log(xisService.deleteXisService(idParametro));
 
   res.send({ message: 'Xis deletado com sucesso!' });
 };
